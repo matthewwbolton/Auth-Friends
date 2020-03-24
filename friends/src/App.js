@@ -10,15 +10,12 @@ function App() {
   return (
     <div className="App">
       <ul>
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
-        <li>
-          <Link to="/protected">Protected Page</Link>
-        </li>
-        <li>
-          <Link to="/logout">Logout</Link>
-        </li>
+        <Link to="/login">Login</Link>
+        <br></br>
+        <Link to="/protected">Friends List</Link>
+        <br></br>
+        <Link to="/logout">Logout</Link>
+        <br></br>
       </ul>
       <Switch>
         <PrivateRoute exact path="/protected" component={AddFriendForm} />

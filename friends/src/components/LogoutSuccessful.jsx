@@ -1,9 +1,13 @@
 import React, { useEffect } from "react";
 
 const LogoutSuccessful = () => {
-  const logout = () => {};
+  const logout = () => {
+    localStorage.clear();
+  };
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    logout();
+  }, []);
 
   return (
     <div>
