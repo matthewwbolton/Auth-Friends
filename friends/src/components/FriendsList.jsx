@@ -59,7 +59,7 @@ const FriendsList = props => {
         <div key={elem.id}>
           <h1>Name: {elem.name}</h1>
           <h2>Age: {elem.age}</h2>
-          <h3>Email: {elem.age}</h3>
+          <h3>Email: {elem.email}</h3>
           <button
             onClick={() => loadFriend(elem.name, elem.age, elem.email, elem.id)}
           >
